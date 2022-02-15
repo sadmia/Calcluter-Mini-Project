@@ -5,6 +5,7 @@ let display = document.getElementById('Display');
 
 
 
+
 function button(InValue) {
 	display.value = display.value += InValue;
 	miniDisplay.value = miniDisplay.value += InValue;
@@ -37,3 +38,6 @@ function bakc() {
 function rasult() {
 	display.value = eval(display.value);
 }
+
+
+
