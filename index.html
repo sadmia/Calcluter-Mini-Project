@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Calculator Design</title>
+		<meta charset="utf-8">
+
+		<!-- fontawesom cdn link -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<section class="div-section">
+			<!-- <p id="didplay1" >0</p>
+			<h1 id="didplay2" >0</h1> -->
+			<input placeholder="0" id="miniDis" class="input1" type="text" disabled>
+			<input placeholder="0" id="Display" class="input2" type="text" disabled>
+
+			<div class="button-section">
+				<p class="clickBtn" onclick="remove()">C</p>
+				<p class="clickBtn" value="(" onclick="button('(')">(</p>
+				<p class="clickBtn" value=")" onclick="button(')')">)</p>
+				<p class="lclick" id="operator" value="/" onclick="button('/')"><i class="fas fa-divide"></i></p>
+
+
+				<p class="clickBtn" value="7" onclick="button('7')">7</p>
+				<p class="clickBtn" value="8" onclick="button('8')">8</p>
+				<p class="clickBtn" value="9" onclick="button('9')">9</p>
+				<p class="lclick" id="operator" value="*" onclick="button('*')"><i class="fas fa-times"></i></p>
+
+				<p class="clickBtn" value="4" onclick="button('4')">4</p>
+				<p class="clickBtn" value="5" onclick="button('5')">5</p>
+				<p class="clickBtn" value="6" onclick="button('6')">6</p>
+				<p class="lclick" id="operator" value="-" onclick="button('-')">-</p>
+
+				<p class="clickBtn" value="1" onclick="button('1')">1</p>
+				<p class="clickBtn" value="2" onclick="button('2')">2</p>
+				<p class="clickBtn" value="3" onclick="button('3')">3</p>
+				<p class="lclick" id="operator" value="+" onclick="button('+')">+</p>
+
+				<p class="clickBtn" value="0" onclick="button('0')">0</p>
+				<p class="clickBtn" value="." onclick="button('.')">.</p>
+				<p class="clickBtn" onclick="bakc()"><i class="fas fa-backspace"></i></p>
+				<p class="lclickR" id="result" onclick="rasult()">=</p>
+			</div>
+		</section>
+
+	<script src="js/castom.js"></script>
+	</body>
+</html>
